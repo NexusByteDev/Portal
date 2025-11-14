@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NBI • Portal</title>
+<style>
+body{
+margin:0;
+background:#050505;
+font-family:Arial, sans-serif;
+color:#e3e3e3;
+overflow-x:hidden;
+user-select:none;
+}
+*{
+outline:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+#orb-container{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+pointer-events:none;
+z-index:0;
+}
+.orb{
+position:absolute;
+width:0;
+height:0;
+border-radius:50%;
+background:radial-gradient(circle,rgba(120,0,180,0.6),rgba(80,0,120,0.2),rgba(0,0,0,0));
+animation:orbAnim 2.8s ease-out forwards;
+}
+@keyframes orbAnim{
+0%{opacity:0;transform:scale(0.2);}
+20%{opacity:0.7;transform:scale(1);}
+80%{opacity:0.4;transform:scale(0.7);}
+100%{opacity:0;transform:scale(0);}
+}
+#top{
+position:relative;
+z-index:2;
+text-align:center;
+padding-top:40px;
+}
+#top img{
+width:75px;
+height:auto;
+border-radius:8px;
+}
+#top h1{
+margin:20px 0 5px 0;
+font-size:26px;
+font-weight:bold;
+}
+#top p{
+margin:0;
+opacity:0.8;
+}
+.list{
+position:relative;
+z-index:2;
+margin:40px auto;
+width:90%;
+max-width:450px;
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+.item{
+display:flex;
+align-items:center;
+gap:14px;
+padding:16px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(6px);
+border-radius:8px;
+cursor:pointer;
+transition:0.15s;
+}
+.item:hover{
+transform:scale(1.02);
+background:rgba(255,255,255,0.07);
+}
+.item img{
+width:32px;
+height:32px;
+border-radius:0;
+}
+.item span{
+font-size:17px;
+}
+.soon{
+opacity:0.35;
+cursor:default;
+}
+.soon:hover{
+transform:none;
+background:rgba(255,255,255,0.05);
+}
+#bottom{
+position:relative;
+z-index:2;
+text-align:center;
+padding:40px 0;
+font-size:14px;
+opacity:0.9;
+}
+#bottom a{
+color:#7a00b8;
+text-decoration:none;
+}
+@media(max-width:450px){
+#top img{width:110px;}
+.item img{width:28px;height:28px;}
+}
+</style>
+</head>
+<body>
+
+<div id="orb-container"></div>
+
+<div id="top">
+<img src="assets/media/branding/favicon.png">
+<h1>NexusByte Initiative</h1>
+<p>Follow us and stay up-to-date across all social media.</p>
+</div>
+
+<div class="list">
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Facebook (Coming soon)</span></div>
+<div class="item" onclick="window.location.href='https://www.instagram.com/init.nexusbyte'"><img src="assets/media/icons/instagram.png"><span>Instagram</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Threads (Coming soon)</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Telegram (Coming soon)</span></div>
+<div class="item" onclick="window.location.href='https://snapchat.com/add/alphabyte.dev'"><img src="assets/media/icons/snapchat.png"><span>SnapChat</span></div>
+<div class="item" onclick="window.location.href='https://tiktok.com/@init.nexusbyte'"><img src="assets/media/icons/tiktok.png"><span>TikTok</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>X (Coming soon)</span></div>
+<div class="item" onclick="window.location.href='http://discord.com/users/1294511042029686895'"><img src="assets/media/icons/discord.png"><span>Discord</span></div>
+<div class="item" onclick="window.location.href='https://youtube.com/@init.nexusbyte'"><img src="assets/media/icons/youtube.png"><span>YouTube</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Spotify (Coming soon)</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>SoundCloud (Coming soon)</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Reddit (Coming soon)</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Pinterest (Coming soon)</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Twitch (Coming soon)</span></div>
+<div class="item soon"><img src="assets/media/icons/coming-soon.png"><span>Kik (Coming soon)</span></div>
+</div>
+
+<div id="bottom">
+<span>Powered by</span> <a href="#">NexusByte</a>
+</div>
+
+<script>
+function spawnOrb(){
+const orb=document.createElement("div");
+orb.className="orb";
+const size=Math.random()*80+40;
+orb.style.width=size+"px";
+orb.style.height=size+"px";
+orb.style.left=Math.random()*window.innerWidth+"px";
+orb.style.top=Math.random()*window.innerHeight+"px";
+document.getElementById("orb-container").appendChild(orb);
+setTimeout(()=>{orb.remove();},3000);
+}
+setInterval(spawnOrb,500);
+</script>
+
+</body>
+</html>
