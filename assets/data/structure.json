@@ -1,0 +1,30 @@
+{
+  "assets": {
+    "data": {
+      "seo.json": {},
+      "structure.json": {}
+    },
+    "media": {
+      "audio": {},
+      "branding": {
+        "favicon.png": {}
+      },
+      "documents": {},
+      "icons": {},
+      "images": {},
+      "videos": {}
+    },
+    "scripts": {
+      "analytics.js": {},
+      "api-management.js": {},
+      "debugging.js": {}
+    },
+    "styling": {
+      "user-experience.css": {}
+    }
+  },
+  "main": {
+    "landing-page.html": {}
+  },
+  "index.html": {}
+}

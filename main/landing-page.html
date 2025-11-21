@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+background: #141414;
+font-family: Arial, sans-serif;
+color: #e6e6e6;
+-webkit-tap-highlight-color: transparent;
+}
+* {
+outline: none;
+}
+.container {
+max-width: 700px;
+margin: auto;
+padding: 20px;
+text-align: center;
+}
+.top-img {
+width: 75px;
+height: 75px;
+object-fit: contain;
+margin: 20px auto;
+display: block;
+border-radius: 8px;
+}
+h3 {
+margin-top: 10px;
+font-size: 20px;
+font-weight: 600;
+}
+.subtext {
+font-size: 14px;
+opacity: 0.8;
+}
+.body-box {
+background: #1d1d1d;
+border: 1px solid #2e2e2e;
+padding: 20px;
+margin-top: 18px;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+cursor: pointer;
+transition: 0.15s;
+}
+.body-box:hover {
+background: #242424;
+}
+.row {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+.icon {
+width: 28px;
+height: 28px;
+object-fit: contain;
+flex-shrink: 0;
+}
+.row-title {
+font-weight: bold;
+font-size: 15px;
+}
+.row-sub {
+margin-top: 6px;
+font-size: 13px;
+opacity: 0.75;
+text-align: left;
+}
+.bottom-area {
+margin-top: 35px;
+font-size: 14px;
+}
+.bottom-area a {
+color: #a855f7;
+text-decoration: none;
+transition: 0.15s;
+}
+.bottom-area a:hover {
+color: #c084fc;
+}
+@media (max-width: 600px) {
+.body-box {
+padding: 16px;
+}
+.icon {
+width: 30px;
+height: 30px;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/branding/favicon.png" class="top-img">
+<h3>Portal</h3>
+<div class="subtext">Access all of our pages with ease.</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Services/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/services.png" class="icon">
+<div class="row-title">Services</div>
+</div>
+<div class="row-sub">All of our services, listed in one place.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Store/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/store.png" class="icon">
+<div class="row-title">Store</div>
+</div>
+<div class="row-sub">Browse and purchase hardware, cheap subscriptions and more.</div>
+</div>
+        
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Music/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/music.png" class="icon">
+<div class="row-title">Music</div>
+</div>
+<div class="row-sub">Play and download our music or explore the community.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Projects/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/projects.png" class="icon">
+<div class="row-title">Projects</div>
+</div>
+<div class="row-sub">All of our projects, in one place.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Entertainment/main/landing-page.html">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/entertainment.png" class="icon">
+<div class="row-title">Entertainment</div>
+</div>
+<div class="row-sub">Download movies, series and Anime for free.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Social-Portals/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/social-portals.png" class="icon">
+<div class="row-title">Social Portals</div>
+</div>
+<div class="row-sub">A collection of social media portals designed by us.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Socials-And-Contact/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/socials-and-contact.png" class="icon">
+<div class="row-title">Socials & Contact</div>
+</div>
+<div class="row-sub">Our official social media links and contact information.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Information/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/information.png" class="icon">
+<div class="row-title">Information</div>
+</div>
+<div class="row-sub">Information on us, who we are, what we do and more.</div>
+</div>
+
+<div class="body-box" onclick="location.href='https://nexusbytedev.github.io/Documentation/main/landing-page.html'">
+<div class="row">
+<img src="https://nexusbytedev.github.io/Portal/assets/media/icons/documentation.png" class="icon">
+<div class="row-title">Documentation</div>
+</div>
+<div class="row-sub">Our official documentation (terms of use, policies, etc).</div>
+</div>
+
+<div class="bottom-area">
+Powered by <a href="#">NexusByte Initiative</a>
+</div>
+</div>
+</body>
+</html>

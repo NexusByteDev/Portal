@@ -1,0 +1,80 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  image-rendering: high-quality;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, video {
+  image-rendering: high-quality;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+video {
+  object-fit: cover;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+a, button, input, textarea, select, div, span {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+*::selection {
+  background: none;
+  color: inherit;
+}
+
+.smooth-switch {
+  opacity: 0;
+  transition: opacity .35s ease, transform .35s ease;
+  transform: translateY(6px);
+}
+
+.smooth-switch.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.page-transition.active {
+  opacity: 1;
+}
+
+.vibrant {
+  filter: saturate(1.4) contrast(1.05);
+}
+
+.smooth {
+  transition: all .35s ease;
+}
