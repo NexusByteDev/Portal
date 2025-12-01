@@ -1,0 +1,20 @@
+{
+  "website_name": "WEBSITE",
+  "author": "NexusByte Dev",
+  "organisation": "NexusByte Initiative",
+  "license": "MIT",
+  "favicon_path": "https://nexusbytedev.github.io/WEBSITE/assets/media/branding/image-logo.png",
+  "css_files": [
+    "https://nexusbytedev.github.io/WEBSITE/assets/styling/user-experience.css"
+  ],
+  "js_files": [
+    "https://nexusbytedev.github.io/WEBSITE/assets/scripts/analytics.js",
+    "https://nexusbytedev.github.io/WEBSITE/assets/scripts/debugging.js"
+  ],
+  "default_theme": "Dark",
+  "keywords": [
+    "HTML, CSS, JS, JSON, Website, Site, Page, Pages, GitHub, GitHub Pages, Media, Company, Organisation"
+  ],
+  "hosting_platform": "GitHub Pages",
+  "website_type": "Front-End"
+}
